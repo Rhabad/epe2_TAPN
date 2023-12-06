@@ -40,8 +40,10 @@ Partial Class Form1
         txtApellido = New TextBox()
         CboxCurso = New ComboBox()
         txtRutCalificaciones = New TextBox()
-        txtNota = New TextBox()
         CBoxAsignatura = New ComboBox()
+        txtMostrarAlumnos = New TextBox()
+        txtMostrarCalificaciones = New TextBox()
+        txtNota = New TextBox()
         SuspendLayout()
         ' 
         ' Label1
@@ -202,13 +204,6 @@ Partial Class Form1
         txtRutCalificaciones.Size = New Size(144, 23)
         txtRutCalificaciones.TabIndex = 20
         ' 
-        ' txtNota
-        ' 
-        txtNota.Location = New Point(144, 390)
-        txtNota.Name = "txtNota"
-        txtNota.Size = New Size(54, 23)
-        txtNota.TabIndex = 21
-        ' 
         ' CBoxAsignatura
         ' 
         CBoxAsignatura.FlatStyle = FlatStyle.System
@@ -220,13 +215,40 @@ Partial Class Form1
         CBoxAsignatura.Size = New Size(144, 23)
         CBoxAsignatura.TabIndex = 22
         ' 
+        ' txtMostrarAlumnos
+        ' 
+        txtMostrarAlumnos.Location = New Point(334, 20)
+        txtMostrarAlumnos.Multiline = True
+        txtMostrarAlumnos.Name = "txtMostrarAlumnos"
+        txtMostrarAlumnos.ScrollBars = ScrollBars.Vertical
+        txtMostrarAlumnos.Size = New Size(208, 217)
+        txtMostrarAlumnos.TabIndex = 23
+        ' 
+        ' txtMostrarCalificaciones
+        ' 
+        txtMostrarCalificaciones.Location = New Point(334, 269)
+        txtMostrarCalificaciones.Multiline = True
+        txtMostrarCalificaciones.Name = "txtMostrarCalificaciones"
+        txtMostrarCalificaciones.ScrollBars = ScrollBars.Vertical
+        txtMostrarCalificaciones.Size = New Size(208, 181)
+        txtMostrarCalificaciones.TabIndex = 24
+        ' 
+        ' txtNota
+        ' 
+        txtNota.Location = New Point(144, 390)
+        txtNota.Name = "txtNota"
+        txtNota.Size = New Size(35, 23)
+        txtNota.TabIndex = 25
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(329, 462)
-        Controls.Add(CBoxAsignatura)
+        ClientSize = New Size(563, 462)
         Controls.Add(txtNota)
+        Controls.Add(txtMostrarCalificaciones)
+        Controls.Add(txtMostrarAlumnos)
+        Controls.Add(CBoxAsignatura)
         Controls.Add(txtRutCalificaciones)
         Controls.Add(CboxCurso)
         Controls.Add(txtApellido)
@@ -269,6 +291,8 @@ Partial Class Form1
     Friend WithEvents txtApellido As TextBox
     Friend WithEvents CboxCurso As ComboBox
     Friend WithEvents txtRutCalificaciones As TextBox
-    Friend WithEvents txtNota As TextBox
     Friend WithEvents CBoxAsignatura As ComboBox
+    Friend WithEvents txtMostrarAlumnos As TextBox
+    Friend WithEvents txtMostrarCalificaciones As TextBox
+    Friend WithEvents txtNota As TextBox
 End Class
